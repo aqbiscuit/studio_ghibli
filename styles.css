@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -12,8 +17,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
+    padding: 20px 120px;
     background-color: #f6f1e6;
+    width: 100%;
 }
 
 header img {
@@ -22,14 +28,17 @@ header img {
     margin-left: 50px;
 }
 
+header nav {
+    width: 45%;
+}
+
 header ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 header li {
     list-style-type: none;
-    margin-left: 180px;
     font-size: 18px;
 }
 
@@ -53,11 +62,19 @@ header a:active {
 
 .description-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 400px;
-    padding: 92.58px 250px;
+    justify-content: center;
+    align-items: center;
     background-color: #fae5b2;
+}
+
+.description-header .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    width: 95%;
+    margin: 50px 0;
+    padding: 0 70px;
 }
 
 .description-header img {
@@ -67,18 +84,23 @@ header a:active {
 
 .description-header .content {
     display: flex;
-    height: 214.84px;
-    padding-right: 80px;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 60%;
+    height: auto;
+    padding: 10px 20px;
 }
 
 .description-header h3 {
     font-size: 55px;
+    margin-bottom: 20px;
 }
 
 .description-header p {
-    font-size: 16px; 
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .description-header .button {
@@ -90,6 +112,7 @@ header a:active {
     border: 2px solid #787d81;
     width: 80px;
     box-shadow: 2px 3px #999;
+    margin-top: 20px;
 }
 
 .description-header .button:link {
@@ -115,18 +138,21 @@ header a:active {
 
 .gallery {
     display: flex;
-    background-color: #f6f1e6;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 800px;
-    padding: 50px 200px;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+    background-color: #f6f1e6;
 }
 
 .gallery div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 50%;
+    min-width: 500px;
+    height: 340px;
 }
 
 .gallery img {
@@ -136,12 +162,17 @@ header a:active {
 }
 
 .quote {
-    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #e6c3c3;
+    padding: 50px 0;
+}
+
+.quote .content {
     display: flex;
     flex-direction: column;
-    padding: 50px 300px;
-    justify-content: center;
+    width: 70%;
 }
 
 .quote p:first-of-type {
@@ -153,6 +184,7 @@ header a:active {
     display: block;
     font-size: 25px;
     text-align: right;
+    padding-top: 20px;
 }
 
 .signup-section {
@@ -214,4 +246,32 @@ header a:active {
 .copyright-section p {
     font-size: 12px;
     text-align: center;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 400px;
+        padding-top: 15px;
+    }
+
+    .description-header .content {
+        width: 90%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .page {
+        width: 960px;
+        margin: 0 auto;
+    }
+
 }
