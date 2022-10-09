@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli Sign Up</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles2.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+<page>
+    <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="Studio Ghibli logo"/>
+        </a>
+        <nav>
+            <ul>
+                <li><a href='flowers.html'>Flowers</a></li>
+                <li><a href='protagonists.html'>Protagonists</a></li>
+                <li><a href='cats.html'>Cats</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-page">
+        <form action="' method="get" class="signup-form">
+            <div class="form-row">
+                <label for="full-name">Name</label>
+                <input id="full-name" name="full-name" type="text"/>
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input  id="email" 
+                        name="email" 
+                        type="email" 
+                        placeholder="joe@example.com"/>
+            </div>
+            <fieldset class="legacy-form-row">
+                <legend>Choose the updates you wish to receive:</legend>
+                <input  id="option-1"
+                        name="option"
+                        type="radio"
+                        value="Movie Releases"/>
+                <label for="option-1" class="radio-label">Movie Releases</label>
+                <input  id="option-2"
+                        name="option"
+                        type="radio"
+                        value="Merchandise Releases"/>
+                <label for="option-2" class="radio-label">Mechandise Releases</label>
+            </fieldset>
+            <div class="form-row">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="quote">
+        <div class="content">
+            <p><em>“Once you’ve met someone you never really forget them”</em></p>
+            <p><em>&#8211 Spirited Away (2001)</em></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright-section">
+            <p>Copyright © aqbiscuit</p>
+        </div>
+    </footer>
+</page>
+</body>
+</html>

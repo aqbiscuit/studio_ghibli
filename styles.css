@@ -133,7 +133,7 @@ header a:active {
     color: black;
     background-color: #e3ded2;
     box-shadow: 1px 2px #666;
-    transform: translateY(1px)
+    transform: translateY(1px);
 }
 
 .gallery {

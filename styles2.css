@@ -29,3 +29,144 @@
 .box-1 .button {
     margin-top: 0;
 }
+
+.form-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 800px;
+    background-color: #f6f1e6;
+}
+
+.signup-form {
+    width: 70%;
+    padding: 50px 100px;
+    margin-top: 50px;
+
+    border: 2px solid rgb(80, 64, 54);
+    border-radius: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.form-row input[type='text'], .form-row input[type='email'] {
+    background-color: #fffdfc;
+    border: 1px solid #D6D9DC;
+    border-radius: 15px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    margin-left: 50px;
+}
+  
+.form-row label {
+    margin-bottom: 15px;
+    margin: 7px 0;
+    width: 60px;
+}
+
+.legacy-form-row {
+    border: none;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+.legacy-form-row legend {
+    margin-bottom: 20px;
+}
+  
+.legacy-form-row .radio-label {
+    display: block;
+    font-size: 15px;
+    padding: 0 20px 0 10px;
+}
+  
+.legacy-form-row input[type='radio'] {
+    margin-top: 2px;
+    margin-left: 10px;
+}
+    
+.legacy-form-row .radio-label,
+.legacy-form-row input[type='radio'] {
+    float: left;
+}
+
+.form-row button {
+    background-color: #f6f1e6;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 16px;
+    border: 2px solid #787d81;
+    width: 80px;
+    box-shadow: 2px 3px #999;
+    margin-top: 20px;
+}
+
+.form-row button:link {
+    color: black;
+    text-decoration: none;
+}
+
+.form-row button:visited {
+    color: black;
+}
+
+.form-row button:hover {
+    color: black;
+    background-color: #e3ded2;
+}
+
+.form-row button:active {
+    color: black;
+    background-color: #e3ded2;
+    box-shadow: 1px 2px #666;
+    transform: translateY(1px);
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start; /* To avoid stretching */
+        margin-bottom: 20px;
+    }
+    .form-row input[type='text'], .form-row input[type='email'] {
+        width: 250px;
+        height: initial;
+    }
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+
+    .legacy-form-row {
+        margin-bottom: 10px;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        width: 120%;
+    }
+    
+    .legacy-form-row legend {
+        width: 140px;
+        text-align: right;
+        padding-right: 20px;
+    }
+    
+    .legacy-form-row legend {
+        float: left;
+    }
+}
